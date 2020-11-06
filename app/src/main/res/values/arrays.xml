@@ -1,0 +1,12 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="web_settings_values">
+        <item>setWebContentsDebuggingEnabled</item>
+        <item>setSupportZoom</item>
+    </string-array>
+
+    <string-array name="web_settings_entries">
+        <item>内容可调试</item>
+        <item>数据可访问</item>
+    </string-array>
+</resources>

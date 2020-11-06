@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="width_default">100</integer>
+    <integer name="height_default">50</integer>
+    <bool name="full_screen_default">false</bool>
+</resources>
