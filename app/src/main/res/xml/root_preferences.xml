@@ -1,0 +1,47 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="基础设置">
+
+        <EditTextPreference
+            app:defaultValue="@string/web_url_default"
+            app:iconSpaceReserved="false"
+            app:key="url"
+            app:title="WebView URL"
+            app:useSimpleSummaryProvider="true" />
+
+        <SeekBarPreference
+            app:defaultValue="@integer/width_default"
+            app:iconSpaceReserved="false"
+            app:key="width"
+            app:showSeekBarValue="true"
+            app:title="设置弹窗宽" />
+
+        <SeekBarPreference
+            app:defaultValue="@integer/height_default"
+            app:iconSpaceReserved="false"
+            app:key="height"
+            app:showSeekBarValue="true"
+            app:title="设置弹窗高" />
+
+        <SwitchPreference
+            android:defaultValue="@bool/full_screen_default"
+            android:key="full_screen"
+            android:title="设置全屏"
+            app:iconSpaceReserved="false"
+            app:summaryOff="当前非全屏状态"
+            app:summaryOn="当前全屏状态" />
+
+        <MultiSelectListPreference
+            android:defaultValue="@array/web_settings_values"
+            android:entries="@array/web_settings_entries"
+            android:entryValues="@array/web_settings_values"
+            android:key="web_view_settings"
+            android:title="WebView设置项"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
