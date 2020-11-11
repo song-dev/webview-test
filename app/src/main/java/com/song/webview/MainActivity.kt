@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val preference = PreferenceManager.getDefaultSharedPreferences(applicationContext)
-        if (preference.getBoolean("full_screen", false)) {
+        if (preference.getBoolean("full_screen", resources.getBoolean(R.bool.full_screen_default))) {
             requestWindowFeature(Window.FEATURE_NO_TITLE)
             setContentView(R.layout.activity_main)
             window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity() {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_settings
-            )
+                setOf(
+                        R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_settings
+                )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)

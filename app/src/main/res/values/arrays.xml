@@ -1,12 +1,15 @@
 <resources>
-    <!-- Reply Preference -->
     <string-array name="web_settings_values">
-        <item>setWebContentsDebuggingEnabled</item>
-        <item>setSupportZoom</item>
+        <item>web_view_debug</item>
+        <item>web_view_security</item>
+        <item>web_view_scroll</item>
+        <item>web_view_content_adaptation</item>
     </string-array>
 
     <string-array name="web_settings_entries">
         <item>内容可调试</item>
-        <item>数据可访问</item>
+        <item>安全设置</item>
+        <item>内容滚动条</item>
+        <item>内容自适应</item>
     </string-array>
 </resources>

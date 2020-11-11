@@ -3,4 +3,7 @@
     <integer name="width_default">100</integer>
     <integer name="height_default">50</integer>
     <bool name="full_screen_default">false</bool>
+    <bool name="background_default">true</bool>
+    <integer name="background_color_default">255</integer>
+    <bool name="touch_cancel_default">false</bool>
 </resources>

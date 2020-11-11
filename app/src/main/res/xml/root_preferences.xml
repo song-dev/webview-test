@@ -27,12 +27,26 @@
             app:title="设置弹窗高" />
 
         <SwitchPreference
+            android:defaultValue="false"
+            android:key="touch_cancel"
+            android:title="点击背景取消"
+            app:iconSpaceReserved="false"
+            app:summaryOff="点击背景不取消弹窗"
+            app:summaryOn="点击背景取消弹窗" />
+
+        <SwitchPreference
             android:defaultValue="@bool/full_screen_default"
             android:key="full_screen"
             android:title="设置全屏"
             app:iconSpaceReserved="false"
             app:summaryOff="当前非全屏状态"
             app:summaryOn="当前全屏状态" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="额外设置"
+        app:iconSpaceReserved="false">
 
         <MultiSelectListPreference
             android:defaultValue="@array/web_settings_values"
@@ -41,6 +55,24 @@
             android:key="web_view_settings"
             android:title="WebView设置项"
             app:iconSpaceReserved="false" />
+
+        <SwitchPreference
+            android:defaultValue="@bool/background_default"
+            android:key="background"
+            android:title="设置背景透明"
+            app:iconSpaceReserved="false"
+            app:summaryOff="当前WebView背景透明"
+            app:summaryOn="当前WebView背景不透明" />
+
+        <SeekBarPreference
+            android:defaultValue="@integer/background_color_default"
+            android:dependency="background"
+            android:key="background_color"
+            android:max="255"
+            android:title="WebView背景颜色"
+            app:iconSpaceReserved="false"
+            app:min="0"
+            app:showSeekBarValue="true" />
 
     </PreferenceCategory>
 
