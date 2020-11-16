@@ -29,7 +29,7 @@ class CustomWebView : WebView {
         val preferences = PreferenceManager.getDefaultSharedPreferences(context)
         // 基础设置项
         settings.javaScriptEnabled = true
-        settings.blockNetworkImage = true // 设置从网络加载图片
+        settings.blockNetworkImage = false // 设置从网络加载图片
         settings.loadsImagesAutomatically = true // 设置可否加载图片
         settings.javaScriptCanOpenWindowsAutomatically = false
 
