@@ -8,6 +8,7 @@ import androidx.fragment.app.DialogFragment
 import androidx.preference.PreferenceManager
 import com.song.webview.R
 import com.song.webview.views.CustomWebView
+import com.song.webview.views.OneLoginWebView
 
 class WebViewDialog : DialogFragment() {
 
@@ -30,7 +31,7 @@ class WebViewDialog : DialogFragment() {
         width = preferenceManager.getInt("width", view.context.resources.getInteger(R.integer.width_default))
         height = preferenceManager.getInt("height", view.context.resources.getInteger(R.integer.height_default))
         url = preferenceManager.getString("url", view.context.resources.getString(R.string.web_url_default)).toString()
-        val webView = view.findViewById<CustomWebView>(R.id.webView)
+        val webView = view.findViewById<OneLoginWebView>(R.id.webView)
         val buffer = StringBuilder()
         buffer.append("width: $width").append('\n').append("height: $height").append('\n').append("url: $url")
         Toast.makeText(context, buffer.toString(), Toast.LENGTH_SHORT).show()

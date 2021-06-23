@@ -4,5 +4,6 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_settings">Settings</string>
 
-    <string name="web_url_default">http://demo.gtapp.xyz/</string>
+<!--    <string name="web_url_default">http://192.168.0.35:8080/oneloginh5</string>-->
+    <string name="web_url_default">https://oneloginh5.geetest.com/oneloginh5</string>
 </resources>
